@@ -434,7 +434,7 @@
 <style lang="scss" scoped>
  .header-banner{
     width:100%;
-    background:#111;
+    background-image: linear-gradient(to right,#d42020 , #db3333); 
     border-bottom: 1px solid #2c281f;
     .banner-row{
       display:flex;

@@ -5,7 +5,6 @@
     <footer-component></footer-component>
     <left-advertisement></left-advertisement>
     <right-advertisement></right-advertisement>
-    {{msg}} 
   </div>
 </template>
 

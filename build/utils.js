@@ -41,7 +41,6 @@ exports.cssLoaders = function (options) {
         })
       })
     }
-
     // Extract CSS when that option is specified
     // (which is the case during production build)
     if (options.extract) {
@@ -61,6 +60,12 @@ exports.cssLoaders = function (options) {
     less: generateLoaders('less'),
     sass: generateLoaders('sass', { indentedSyntax: true }),
     scss: generateLoaders('sass'),
+    scss: generateLoaders('sass').concat({
+      loader:'sass-resources-loader',
+      options:{
+        resources:path.resolve(__dirname,'./../src/assets/styles/theme.scss')
+      }
+    }),
     stylus: generateLoaders('stylus'),
     styl: generateLoaders('stylus')
   }
