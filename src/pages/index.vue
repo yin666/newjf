@@ -3,8 +3,8 @@
     <header-component></header-component>
     <router-view/>
     <footer-component></footer-component>
-    <left-advertisement></left-advertisement>
-    <right-advertisement></right-advertisement>
+    <!-- <left-advertisement></left-advertisement>
+    <right-advertisement></right-advertisement> -->
   </div>
 </template>
 
