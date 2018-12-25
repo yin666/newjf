@@ -27,7 +27,6 @@
   height: 352px;
   top:30%;
   left: 0;
-  background-image: url(https://cdn.igsttech.com/Web.Portal/DQ004-01.Portal/Content/Views/Shared/images/services/left.png);
   background-position: right top;
 }
 </style>

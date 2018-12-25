@@ -8,6 +8,9 @@ import store from './store'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
 import util from './assets/js/util.js'
+import Element from 'element-ui'
+ 
+Vue.use(Element)
 Vue.use(VueAxios, axios)
 Vue.prototype.util = util;
 Vue.config.productionTip = false

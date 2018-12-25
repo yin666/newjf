@@ -9,20 +9,14 @@
         </div>
         <div class="marquee">
           <marquee ref="marquee" direction="left" loop="-1" >
-            <ul @mouseenter="stopMarquee" @mouseleave="beginMarquee">
-              <li>📢热门电子活动专题</li>
-            <li>📢手机app下载教程</li>
-            <li>📢捕鱼达人-即中超高奖励</li>
-            <li>📢充值通道-强烈推荐支付宝</li>
-            <li >📢太阳城集团-大奖分享</li>
-            <li >📢太阳城集团-支付快讯   ☀️☀️【微信扫码】固定扫码金额：10元 20元 30元 50元 100元 200元&nbsp; &nbsp;300-3000元（可任意金额）    ☀️☀️【微信wap】固定扫码金额10 20 30 40 50 100 200 300 400 500 600 700 800 900 1000 2000 2500</li> 
-          </ul> 
+            <ul>
+              <li>尊敬的各位用户，我们的银联卡已经更换为工商银行，刘**名 6334783748474947 ，请留意</li>
+            </ul> 
           </marquee>
-        </div>
-        <div class="right-yjsite">
         </div>
       </div>
     </div>
+    <more-games></more-games>
     <div class="content-out">
       <div class="content row">
         <ul>
@@ -114,11 +108,11 @@
 <script>
 
 // import countdown from "./home/countdown";
-// import gift from "./home/gift";
+import moreGames from "./home/moreGames";
 export default {
   components: {
     // countdown,
-    // gift
+    moreGames
   },
   name: "home",
   data() {
@@ -137,13 +131,7 @@ export default {
   methods: {
     init() {
       console.log("11");
-    },
-    stopMarquee(){//鼠标悬浮，暂停跑马灯
-      this.$refs.marquee.stop();
-    },
-    beginMarquee(){//鼠标离开,开启跑马灯
-      this.$refs.marquee.start();
-    }		
+    }
 	}
 };
 </script>
@@ -154,8 +142,8 @@ export default {
   position:relative;
   .home-out{
     width: 100%;
-    height: 2rem;
-    background:url(https://cdn.igsttech.com/Web.Portal/DQ004-01.Portal/Content/Views/Lobby/Live/banner.jpg);
+    height: 5.04rem;
+    background: url(../../assets/img/banner1920_504.png) no-repeat left center;
   }
   .announcement-out{
     width: 100%;
@@ -194,11 +182,6 @@ export default {
           align-items: center;
           cursor: pointer;
         }
-      }
-      .right-yjsite{
-        width: 162px;
-        height:40px; 
-        background: url(https://cdn.igsttech.com/Web.Portal/DQ004-01.Portal/Content/Views/Shared/images/net.png) no-repeat left center;
       }
     }
   }

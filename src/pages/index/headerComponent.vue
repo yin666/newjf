@@ -1,7 +1,8 @@
 <template>
 <section class="header">
-  <header-banner :colorChange = "colorChange"></header-banner>
   <header-acount></header-acount>
+  <header-banner :colorChange = "colorChange"></header-banner>
+  
 </section>
   
 </template>
@@ -51,8 +52,4 @@
 </script>
 
 <style lang="scss" scoped>
-.header{
-  
-}
-
 </style>

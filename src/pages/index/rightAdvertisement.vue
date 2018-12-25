@@ -1,6 +1,5 @@
 <template>
-  <aside class="right-advertise">
-    111   
+  <aside class="right-advertise">   
   </aside>
 </template>
 
@@ -27,7 +26,6 @@
   height: 352px;
   top:30%;
   right: 0;
-  background-image: url(https://cdn.igsttech.com/Web.Portal/DQ004-01.Portal/Content/Views/Shared/images/services/right.png);
   background-position: left top;
 }
 </style>

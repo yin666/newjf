@@ -7,9 +7,7 @@
       </div>
       <nav class="right-nav">
         <ul>
-          <li>
-            <span class="banner-pic home">             
-            </span>
+          <li>           
             <span class="banner-chinese">
               首页
             </span>
@@ -17,389 +15,77 @@
               HOME
             </span>
           </li>
-          <li :class="colorChange===1?'color-white':'color-green'" @mouseenter="slidedown='electric'" @mouseleave="slidedown=null">
-            <span class="banner-pic slogs" :class="colorChange===1?'bg-position-bottom':'bg-position-top'">
-              <div class="hot-pic">
-              </div>
-            </span>
+          <li @mouseenter="slidedown='electric'" @mouseleave="slidedown=null">
             <span class="banner-chinese">
-              电子子游艺
+              彩票
             </span>
             <span class="banner-english">
-              SLOGS
+              Lottery
             </span>
-            <div class="subnav fish" :class="slidedown==='electric'?'':'height-0'">
-              <ol>
-                <li>
-                  <span>SLOGS</span>
-                  <i></i>
-                </li>
-                <li>
-                  <span>SLOGS</span>
-                  <i></i>
-                </li>
-                <li>
-                  <span>SLOGS</span>
-                  <i></i>
-                </li>
-                <li>
-                  <span>SLOGS</span>
-                  <i></i>
-                </li>
-                <li>
-                  <span>SLOGS</span>
-                  <i></i>
-                </li>
-                <li>
-                  <span>SLOGS</span>
-                  <i></i>
-                </li>
-                <li>
-                  <span>SLOGS</span>
-                  <i></i>
-                </li>
-                <li>
-                  <span>SLOGS</span>
-                  <i></i>
-                </li>
-                <li>
-                  <span>SLOGS</span>
-                  <i></i>
-                </li>
-                <li>
-                  <span>SLOGS</span>
-                </li>
-              </ol>
-            </div>
           </li>
-          <li :class="colorChange===0?'color-white':'color-yellow'" @mouseenter="slidedown='fish'" @mouseleave="slidedown=null">
-            <span class="banner-pic fish-game" :class="colorChange===1?'bg-position-bottom':'bg-position-top'">
-              <div class="hot-pic">
-
-              </div>
-            </span>
+          <li  @mouseenter="slidedown='fish'" @mouseleave="slidedown=null">
             <span class="banner-chinese">
-              捕鱼达人
+              外盘
             </span>
             <span class="banner-english">
-              FISH GAME
+              Waipan
             </span>
-            <div class="subnav fish " :class="slidedown==='fish'?'':'height-0'">
-              <ol>
-                <li>
-                  <span>AG Fish</span>
-                  <i></i>
-                </li>
-                <li>
-                  <span>AG Fish</span>
-                  <i></i>
-                </li>
-                <li>
-                  <span>AG Fish</span>
-                  <i></i>
-                </li>
-                <li>
-                  <span>AG Fish</span>
-                  <i></i>
-                </li>
-                <li>
-                  <span>AG Fish</span>
-                  <i></i>
-                </li>
-                <li>
-                  <span>AG Fish</span>
-                  <i></i>
-                </li>
-                <li>
-                  <span>AG Fish</span>
-                  <i></i>
-                </li>
-                <li>
-                  <span>AG Fish</span>
-                  <i></i>
-                </li>
-                <li>
-                  <span>AG Fish</span>
-                  <i></i>
-                </li>
-                <li>
-                  <span>AG Fish</span>
-                </li>
-              </ol>
-            </div>
           </li>
-          <li :class="colorChange===1?'color-white':'color-yellow'" @mouseenter="slidedown='chess'" @mouseleave="slidedown=null">
-            <span class="banner-pic card-games" :class="colorChange===1?'bg-position-bottom':'bg-position-top'">
-              <div class="superhot-pic">
-
-              </div>
-            </span>
+          <li @mouseenter="slidedown='chess'" @mouseleave="slidedown=null">
             <span class="banner-chinese">
-              棋牌对战
+              JF彩票牛牛
             </span>
             <span class="banner-english">
-              CARD GAMES
+              JF Game
             </span>
-            <div class="subnav fish " :class="slidedown==='chess'?'':'height-0'">
-              <ol>
-                <li>
-                  <span>CARD GAMES</span>
-                  <i></i>
-                </li>
-                <li>
-                  <span>CARD GAMES</span>
-                  <i></i>
-                </li>
-                <li>
-                  <span>CARD GAMES</span>
-                  <i></i>
-                </li>
-                <li>
-                  <span>CARD GAMES</span>
-                  <i></i>
-                </li>
-                <li>
-                  <span>CARD GAMES</span>
-                  <i></i>
-                </li>
-                <li>
-                  <span>CARD GAMES</span>
-                  <i></i>
-                </li>
-                <li>
-                  <span>CARD GAMES</span>
-                  <i></i>
-                </li>
-                <li>
-                  <span>CARD GAMES</span>
-                  <i></i>
-                </li>
-                <li>
-                  <span>CARD GAMES</span>
-                  <i></i>
-                </li>
-                <li>
-                  <span>CARD GAMES</span>
-                </li>
-              </ol>
-            </div>
           </li>
-          <li :class="colorChange===1?'color-white':'color-yellow'"  @mouseenter="slidedown='realPerson'" @mouseleave="slidedown=null">
-            <span class="banner-pic card-games" :class="colorChange===1?'bg-position-bottom':'bg-position-top'">
-              <div class="superhot-pic">
-
-              </div>
-            </span>
+          <li @mouseenter="slidedown='realPerson'" @mouseleave="slidedown=null">
             <span class="banner-chinese">
-              真人视讯
+              真人娱乐
             </span>
             <span class="banner-english">
               CASINO
             </span>
-            <div class="subnav fish " :class="slidedown==='realPerson'?'':'height-0'">
-              <ol>
-                <li>
-                  <span>CASINO</span>
-                  <i></i>
-                </li>
-                <li>
-                  <span>CASINO</span>
-                  <i></i>
-                </li>
-                <li>
-                  <span>CASINO</span>
-                  <i></i>
-                </li>
-                <li>
-                  <span>CASINO</span>
-                  <i></i>
-                </li>
-                <li>
-                  <span>CASINO</span>
-                  <i></i>
-                </li>
-                <li>
-                  <span>CASINO</span>
-                  <i></i>
-                </li>
-                <li>
-                  <span>CASINO</span>
-                  <i></i>
-                </li>
-                <li>
-                  <span>CASINO</span>
-                  <i></i>
-                </li>
-                <li>
-                  <span>CASINO</span>
-                  <i></i>
-                </li>
-                <li>
-                  <span>CASINO</span>
-                </li>
-              </ol>
-            </div>
           </li>
           <li @mouseenter="slidedown='lottery'" @mouseleave="slidedown=null">
-            <span class="banner-pic lottery">
-            </span>
             <span class="banner-chinese">
-              彩票游戏
+              电子游艺
             </span>
             <span class="banner-english">
-              LOTTERY
+              Games
             </span>
-            <div class="subnav fish " :class="slidedown==='lottery'?'':'height-0'">
-              <ol>
-                <li>
-                  <span>LOTTERY</span>
-                  <i></i>
-                </li>
-                <li>
-                  <span>LOTTERY</span>
-                  <i></i>
-                </li>
-                <li>
-                  <span>LOTTERY</span>
-                  <i></i>
-                </li>
-                <li>
-                  <span>LOTTERY</span>
-                  <i></i>
-                </li>
-                <li>
-                  <span>LOTTERY</span>
-                  <i></i>
-                </li>
-                <li>
-                  <span>LOTTERY</span>
-                  <i></i>
-                </li>
-                <li>
-                  <span>LOTTERY</span>
-                  <i></i>
-                </li>
-                <li>
-                  <span>LOTTERY</span>
-                  <i></i>
-                </li>
-                <li>
-                  <span>LOTTERY</span>
-                  <i></i>
-                </li>
-                <li>
-                  <span>LOTTERY</span>
-                </li>
-              </ol>
-            </div>
           </li>
-          <li @mouseenter="slidedown='sports'" @mouseleave="slidedown=null">
-            <span class="banner-pic sports">
-            </span>
+           <li @mouseenter="slidedown='realPerson'" @mouseleave="slidedown=null">
             <span class="banner-chinese">
-              体育电竞
+              真人娱乐
             </span>
             <span class="banner-english">
-              SPORTS
+              CASINO
             </span>
-            <div class="subnav fish " :class="slidedown==='sports'?'':'height-0'">
-              <ol>
-                <li>
-                  <span>SPORTS</span>
-                  <i></i>
-                </li>
-                <li>
-                  <span>SPORTS</span>
-                  <i></i>
-                </li>
-                <li>
-                  <span>SPORTS</span>
-                  <i></i>
-                </li>
-                <li>
-                  <span>SPORTS</span>
-                  <i></i>
-                </li>
-                <li>
-                  <span>SPORTS</span>
-                  <i></i>
-                </li>
-                <li>
-                  <span>SPORTS</span>
-                  <i></i>
-                </li>
-                <li>
-                  <span>SPORTS</span>
-                  <i></i>
-                </li>
-                <li>
-                  <span>SPORTS</span>
-                  <i></i>
-                </li>
-                <li>
-                  <span>SPORTS</span>
-                  <i></i>
-                </li>
-                <li>
-                  <span>SPORTS</span>
-                </li>
-              </ol>
-            </div>
           </li>
-          <li class="color-0ff" @mouseenter="slidedown='promotion'" @mouseleave="slidedown=null">
-            <span class="banner-pic promotion">
-              <div class="hot-pic">
-              </div>
-            </span>
+          <li @mouseenter="slidedown='promotion'" @mouseleave="slidedown=null">
             <span class="banner-chinese">
               优惠活动
             </span>
             <span class="banner-english">
               PROMOTION
             </span>
-            <div class="subnav fish " :class="slidedown==='promotion'?'':'height-0'">
-              <ol>
-                <li>
-                  <span>LOTTERY</span>
-                  <i></i>
-                </li>
-                <li>
-                  <span>LOTTERY</span>
-                  <i></i>
-                </li>
-                <li>
-                  <span>LOTTERY</span>
-                  <i></i>
-                </li>
-                <li>
-                  <span>LOTTERY</span>
-                  <i></i>
-                </li>
-                <li>
-                  <span>LOTTERY</span>
-                  <i></i>
-                </li>
-                <li>
-                  <span>LOTTERY</span>
-                  <i></i>
-                </li>
-                <li>
-                  <span>LOTTERY</span>
-                  <i></i>
-                </li>
-                <li>
-                  <span>LOTTERY</span>
-                  <i></i>
-                </li>
-                <li>
-                  <span>LOTTERY</span>
-                  <i></i>
-                </li>
-                <li>
-                  <span>LOTTERY</span>
-                </li>
-              </ol>
-            </div>
+          </li>
+          <li @mouseenter="slidedown='promotion'" @mouseleave="slidedown=null">
+            <span class="banner-chinese">
+              品牌介绍
+            </span>
+            <span class="banner-english">
+              About US
+            </span>
+          </li>
+          <li @mouseenter="slidedown='promotion'" @mouseleave="slidedown=null">
+            <span class="banner-chinese">
+              下载中心
+            </span>
+            <span class="banner-english">
+              Download
+            </span>
           </li>
         </ul>
       </nav>
@@ -440,29 +126,37 @@
       display:flex;
       justify-content: space-between;
       color:#fff;
+      align-items: center;
       .left-logo{
         position:relative;
         .pic-div{
           position: relative;
           display: inline-block;
-          width: 3.16rem;
-          height: 1.02rem;
+          width: 1.94rem;
+          height: 0.57rem;
           vertical-align: top;
-          background: url(https://cdn.igsttech.com/Web.Portal/DQ004-01.Portal/Content/Views/Shared/images/logo.png) no-repeat left center;
+          background: url(../../../assets/img/logo194_57.png) no-repeat left center;
         }
       }
       .right-nav{
         display:flex;
+        align-items: center;
+        height: 0.57rem;
         ul{
           display:flex;
+          align-items: center;
+          height: 100%;
           >li{
             display:flex;
             flex-direction: column;
             padding: 0 0.1rem;
             cursor: pointer;
+            height: 100%;
             position:relative;
-            &:last-child{
-              padding-right: 0;
+            align-items: center;
+            &:hover{
+              background-image: linear-gradient(to bottom,#f6e7e7 , #f17777); 
+              color:#d92c2c;
             }
             .subnav {
               // display: none;
@@ -505,78 +199,15 @@
               left: -113px;;
               width:304px;
             }
-            ol{
-              display: flex;
-              flex-wrap:wrap;
-              color: #fff;
-              li{
-                position: relative;
-                box-sizing: border-box;
-                border-bottom: 1px dotted #333;
-                width:150px; 
-                height: 36px;
-                line-height: 36px;
-                padding-left: 40px;
-                background: url('https://cdn.igsttech.com/Web.Portal/DQ004-01.Portal/Content/Views/Shared/images/subnav/fish/ag_fish.png') left center no-repeat;
-              }
-            }
           }
-        }
-        .banner-pic{
-          position: relative;
-          display: block;
-          width: 0.29rem;
-          height: .24rem;
-          margin: .20rem auto .07rem;
-          background-repeat: no-repeat;
-          .hot-pic{
-            position: absolute;
-            top: -0.06rem;
-            right: -0.20rem;
-            width: 0.23rem;
-            height: .26rem;
-            background: url(https://cdn.igsttech.com/Web.Portal/DQ004-01.Portal/Content/Views/Shared/images/hot.gif) no-repeat center top;
-          }
-          .superhot-pic{
-            position: absolute;
-            top: -0.06rem;
-            right: -0.20rem;
-            width: 0.23rem;
-            height: .26rem;
-            background: url('https://cdn.igsttech.com/Web.Portal/DQ004-01.Portal/Content/Views/Shared/images/superhot.gif') no-repeat center top
-          }          
-        }
-        .home{
-          background:url(https://cdn.igsttech.com/Web.Portal/DQ004-01.Portal/Content/Views/Shared/images/nav/home.png);
-        }
-        .slogs{
-          background:url('https://cdn.igsttech.com/Web.Portal/DQ004-01.Portal/Content/Views/Shared/images/nav/slot.png');
-        }
-        .fish-game{
-          background:url('https://cdn.igsttech.com/Web.Portal/DQ004-01.Portal/Content/Views/Shared/images/nav/fish.png');
-        }
-        .card-games{
-          background:url('https://cdn.igsttech.com/Web.Portal/DQ004-01.Portal/Content/Views/Shared/images/nav/board.png');
-        }
-        .lottery{
-          background:url('https://cdn.igsttech.com/Web.Portal/DQ004-01.Portal/Content/Views/Shared/images/nav/lottery.png')
-        }
-        .sports{
-          background:url('https://cdn.igsttech.com/Web.Portal/DQ004-01.Portal/Content/Views/Shared/images/nav/sport.png');
-        }
-        .promotion{
-          background:url('https://cdn.igsttech.com/Web.Portal/DQ004-01.Portal/Content/Views/Shared/images/nav/promotion.png');
         }
       }
     }
-    .bg-position-top{
-      background-position-y: top !important;
-    }
-    .bg-position-center{
-      background-position-y: center !important;
-    }
-    .bg-position-top{
-      background-position-y: bottom !important;
+    .banner-chinese{
+      display: inline-flex;
+      box-sizing: border-box;
+      padding-top: 0.1rem;
+      padding-bottom:0.05rem;
     }
  }
 </style>

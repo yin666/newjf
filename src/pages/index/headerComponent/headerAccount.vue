@@ -1,24 +1,27 @@
 <template>
   <section class="header-account">
-    <div class="row account-row">
-      <input class="accout" type="text">
-      <input class="pass" type="password">
-      <div class="checkcode-div">
-        <input class="checkcode" type="text" placeholder="Check Code">
-        <img class="yzm" src="" alt="">
-      </div>    
-      <button class="login">
-        LOGIN
-      </button>
-      <button class="join-us">
-        JOIN US
-      </button>
-      <div class="forget-btn">
+    <div class="row header-account-row">
+      <div class="left-mobile">
         <span>
-          GET P/W
+          手机版
         </span>
-        <span>></span>
       </div>
+      <div class="account-row">
+        <div class="account-div">
+          <i></i>
+          <input class="accout" type="text" placeholder="账户">
+        </div>
+        <div class="pass-div">
+          <i></i>
+          <input class="pass" type="password" placeholder="密码">
+        </div>   
+        <button class="login">
+          登录
+        </button>
+        <button class="join-us">
+          免费开户
+        </button>
+      </div>    
     </div>
   </section>   
 </template>
@@ -52,14 +55,20 @@
   border-bottom: 1px solid #2c281f;
   display:flex;
   align-items: center;
+  .header-account-row{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   .account-row{
     display:flex;
     justify-content: flex-end;
-    color:#fff;
+    color: #bfbfbf;
     align-items: center;
     input{
+      box-sizing: border-box;
       width: 163px;
-      height: 32px;
+      height: 33px;
       padding-left: 5px;
       margin-right: 10px;
       color: #777;
@@ -68,9 +77,10 @@
       border-radius: 3px;
     }
     button{
+      box-sizing: border-box;
       cursor: pointer;
       padding:0 10px;
-      height: 30px;
+      height: 33px;
       margin: 0 4px;
       color: #fff;
       font-size: 13px;
@@ -80,17 +90,40 @@
       border-radius: 3px;
       transition: all .3s;
     }
-    .forget-btn{
-      cursor:pointer;
-      color: #e9dc86;
+    .account-div{
+      position:relative;
+      i{
+        position: absolute;
+        width: 0.25rem;
+        height: 0.25rem;
+        left: 0.05rem;
+        top: 0.05rem;
+        background: url(../../../assets/img/user25_25.png) no-repeat left center;
+        background-size: 0.25rem;
+      }
+    }
+    .pass-div{
+      position:relative;
+      i{
+        position: absolute;
+        width: 0.25rem;
+        height: 0.25rem;
+        left: 0.05rem;
+        top: 0.05rem;
+        background: url(../../../assets/img/password25_25.png) no-repeat left center;
+        background-size: 0.25rem;
+      }
+    }
+    .pass-div{
+      position:relative;
     }
     .accout{
       padding-left: 33px;
-      background: url(https://cdn.igsttech.com/Web.Portal/DQ004-01.Portal/Content/Views/Shared/images/user.png) no-repeat left center;
+      background-color: #54514c;
     }
     .pass{
       padding-left: 33px;
-      background: url(https://cdn.igsttech.com/Web.Portal/DQ004-01.Portal/Content/Views/Shared/images/pass.png) no-repeat left center;
+      background-color: #54514c;
     }
     .checkcode-div{
       position:relative;
@@ -103,11 +136,14 @@
       }
     }
     .login{
-      background: #db4640;     
+      color: #000;
+      background-image: linear-gradient(to bottom,#e8eaaf, #b5800c); 
+      min-width: 0.9rem;     
     }
     .join-us{
       color: #000;
-      background: #eac06c;
+      background-image: linear-gradient(to bottom,#e1e1e1, #767676); 
+      min-width: 0.9rem;  
     }
   }
  }
