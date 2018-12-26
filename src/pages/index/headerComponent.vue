@@ -1,8 +1,7 @@
 <template>
 <section class="header">
   <header-acount></header-acount>
-  <header-banner :colorChange = "colorChange"></header-banner>
-  
+  <header-banner :colorChange = "colorChange"></header-banner> 
 </section>
   
 </template>

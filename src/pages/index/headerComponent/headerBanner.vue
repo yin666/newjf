@@ -7,14 +7,14 @@
       </div>
       <nav class="right-nav">
         <ul>
-          <li>           
+          <router-link tag="li" to="/" class="selected">
             <span class="banner-chinese">
               首页
             </span>
             <span class="banner-english">
               HOME
             </span>
-          </li>
+          </router-link>
           <li @mouseenter="slidedown='electric'" @mouseleave="slidedown=null">
             <span class="banner-chinese">
               彩票
@@ -39,28 +39,20 @@
               JF Game
             </span>
           </li>
-          <li @mouseenter="slidedown='realPerson'" @mouseleave="slidedown=null">
+          <router-link tag="li" to="/realPerson" @mouseenter="slidedown='realPerson'" @mouseleave="slidedown=null">
             <span class="banner-chinese">
               真人娱乐
             </span>
             <span class="banner-english">
               CASINO
             </span>
-          </li>
+          </router-link> 
           <li @mouseenter="slidedown='lottery'" @mouseleave="slidedown=null">
             <span class="banner-chinese">
               电子游艺
             </span>
             <span class="banner-english">
               Games
-            </span>
-          </li>
-           <li @mouseenter="slidedown='realPerson'" @mouseleave="slidedown=null">
-            <span class="banner-chinese">
-              真人娱乐
-            </span>
-            <span class="banner-english">
-              CASINO
             </span>
           </li>
           <li @mouseenter="slidedown='promotion'" @mouseleave="slidedown=null">
@@ -199,6 +191,10 @@
               left: -113px;;
               width:304px;
             }
+          }
+          .selected{
+            background-image: linear-gradient(to bottom,#f6e7e7 , #f17777); 
+            color:#d92c2c;
           }
         }
       }

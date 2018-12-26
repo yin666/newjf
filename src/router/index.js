@@ -14,6 +14,12 @@ export const index = {
 			title: 'home',
 			name: 'home',
 			component: () => import('@/pages/index/home.vue')
+    },
+    {
+			path: 'realPerson',
+			title: 'realPerson',
+			name: 'realPerson',
+			component: () => import('@/pages/index/realPerson.vue')
     }
     // {
 		// 	path: 'template',
