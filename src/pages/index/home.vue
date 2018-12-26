@@ -89,7 +89,7 @@ export default {
   .home-out{
     width: 100%;
     height: 5.04rem;
-    background: url(../../assets/img/banner1920_504.png) no-repeat left center;
+    background: url(../../assets/img/banner1920_504.png) no-repeat center center;
   }
   .advantage-title,.hot-lottery-more{
     width: 100%;

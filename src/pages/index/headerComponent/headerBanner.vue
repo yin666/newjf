@@ -7,14 +7,14 @@
       </div>
       <nav class="right-nav">
         <ul>
-          <router-link tag="li" to="/" class="selected">
+          <li :class="actived === 'home' ? 'selected':''" @click="links('home')">
             <span class="banner-chinese">
               首页
             </span>
             <span class="banner-english">
               HOME
             </span>
-          </router-link>
+          </li>
           <li @mouseenter="slidedown='electric'" @mouseleave="slidedown=null">
             <span class="banner-chinese">
               彩票
@@ -39,14 +39,22 @@
               JF Game
             </span>
           </li>
-          <router-link tag="li" to="/realPerson" @mouseenter="slidedown='realPerson'" @mouseleave="slidedown=null">
-            <span class="banner-chinese">
-              真人娱乐
-            </span>
-            <span class="banner-english">
-              CASINO
-            </span>
-          </router-link> 
+          <!-- <router-link tag="li" to="/realPerson" :class="actived === 'realPerson' ? 'selected':''" @mouseenter="slidedown='realPerson'" @mouseleave="slidedown=null" @click="testReal">
+              <span class="banner-chinese">
+                真人娱乐
+              </span>
+              <span class="banner-english">
+                CASINO
+              </span>       
+          </router-link>  -->
+          <li :class="actived === 'realPerson' ? 'selected':''" @mouseenter="slidedown='realPerson'" @mouseleave="slidedown=null" @click="links('realPerson')">
+              <span class="banner-chinese">
+                真人娱乐
+              </span>
+              <span class="banner-english">
+                CASINO
+              </span>       
+          </li>
           <li @mouseenter="slidedown='lottery'" @mouseleave="slidedown=null">
             <span class="banner-chinese">
               电子游艺
@@ -92,11 +100,26 @@
     props: ['colorChange'],
     data() {
       return {
-        slidedown:null,//控制banner中的slidedown
+        actived:"home",//  控制banner中的选中
+        slidedown:null,// 控制banner中的slidedown
         msg: 'header-banne'
       }
     },
     methods: {
+      links(context){ //点击导航跳转到不同页面
+        switch(context) {
+          case 'home':         
+            this.actived = 'home';
+            this.$router.push({name:'home'});
+            break;
+          case 'realPerson':
+            this.actived = 'realPerson';
+            this.$router.push('realPerson');
+            break;
+          default:
+            // code block
+        }
+      },
       init() {
         console.log(this.colorChange);
       }
@@ -127,7 +150,7 @@
           width: 1.94rem;
           height: 0.57rem;
           vertical-align: top;
-          background: url(../../../assets/img/logo194_57.png) no-repeat left center;
+          background: url(../../../assets/img/logo194_57.png) no-repeat center center;        
         }
       }
       .right-nav{

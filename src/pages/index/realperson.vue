@@ -13,9 +13,7 @@
         <li @mouseenter="hoverLi" @mouseleave="leaveLi" ></li>
         <li @mouseenter="hoverLi" @mouseleave="leaveLi" ></li>
       </ul>
-
     </div>
-
   </section>
 </template>
 <script>
@@ -60,9 +58,10 @@ export default {
   margin: 0 auto;
   background-color:#440c00;
   .banner{
-    width: 19.20rem;
+    width: 100%;
     height: 3rem;
-    background: url(../../assets/img/copy-banner.jpg) no-repeat left center;
+    background: url(../../assets/img/copy-banner.jpg) no-repeat center center;
+    background-size:cover;
   }
   .photos{
     display: flex;

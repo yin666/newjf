@@ -30,7 +30,7 @@ export const index = {
 	]
 }
 export const template = {
-  path: 'template',
+  path: '/template',
   name: 'template',
   component: () => import('@/pages/template.vue')
 }
