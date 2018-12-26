@@ -1,83 +1,54 @@
 <template>
   <section class="footer">
-    <div class="wraper">
-      <div class="footer-row row">
-        <ul>
-          <li>
-            <span>
-              QQ:
-            </span>
-            <span>
-              815665599
-            </span>
-          </li>
-          <li>
-            <span>
-              Online Chat
-            </span>
-          </li>
-          <li>
-            <span>
-              服务时间：
-            </span>
-            <span>
-              00:00-24:00
-            </span>
-          </li>
-          <li>
-            <span>
-              Email:
-            </span>
-            <span>
-              KF@65599.com
-            </span>
-          </li>
-        </ul>
-        <div class="hotline">
-          <span>7x24小时热线：</span>
-          <span>+63 930339 8888</span>
-        </div>
-      </div>
-    </div>
-    <div class="wraper">
+    <div class="content">
       <div class="row links">
         <ul>
           <li>
             <span>
-              ABOUT US
+              关于我们
             </span> 
           </li>
           <li>
             <span>
-              CONTACT US
+              优惠活动
             </span> 
           </li>
           <li>
             <span>
-              AFFILIATION
+              条款与规则
             </span> 
           </li>
           <li>
             <span>
-              HOW TO DEPOSIT
+              博彩责任
             </span> 
           </li>
           <li>
             <span>
-              Free Play
+              免责声明
             </span> 
           </li>
           <li>
             <span>
-              CLIENT
+              代理合作
+            </span> 
+          </li>
+          <li>
+            <span>
+              技术帮助
             </span> 
           </li>
         </ul>
       </div>
     </div>
-    <div class="wraper">
-      <div class="row last-row">
-        Copyright © 太阳城集团 Reserved
+    <div class="content advertise-pic">
+      <div class="row ">
+        <img class="img-advertise" src="../../assets/img/bottom-advertise.png" alt="">
+      </div>
+    </div>
+    <div class="content last-row">
+      <div class="row">
+        Coryright©2018 All Rights Reserved by JF game
       </div>
     </div>
   </section>   
@@ -101,70 +72,49 @@
 
 <style lang="scss" scoped>
 .footer{
-  padding-top: 20px;
-  background-color: #222; 
-  .wraper{
+  background-color: #231f20; 
+  .content{
     position:relative;
-    width:100%;
-    border-bottom: 1px solid #2c281f;
+    width:100%;   
     display:flex;
-    .footer-row{
-      position: relative;
-      height: 145px;
-      background: url(https://cdn.igsttech.com/Web.Portal/DQ004-01.Portal/Content/Views/Shared/images/footer_logo.png) no-repeat right top;
-      ul{
-        position: relative;
-        display: flex;
-        width: 370px;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        li{
-          margin-top: 13px;
-          display: inline-block;
-          width: 171px;
-          height: 39px;
-          color: #6f6f6f;
-          font-size: 12px;
-          text-align: center;
-          line-height: 37px;
-          border: 1px solid #313131;
-        }
-      }
-      .hotline{
-        color: #6f6f6f;
-        font-size: 18px;
-        font-weight: bold;
-        width: 370px;
-        text-align: center;
-        padding-top: 10px;
-      }
-    }
-    .links{
-      display: flex;
-      height: 52px;
-      justify-content: center;
-      ul{
-        display:flex;
-        align-items: center;
-        li{
-          color:#9c9c9c;
-          border-right:1px solid #9c9c9c;
-          padding: 0 10px;
-          cursor:pointer;
-          &:last-child{
-            border-right: 0px;
-          }
+  }
+  .links{
+    display: flex;
+    height: 0.52rem;
+    justify-content: center; 
+    border-bottom: 1px solid #2c281f;     
+    ul{
+      display:flex;
+      width: 8.4rem;
+      align-items: center;
+      justify-content: space-between;
+      >li{
+        color:#7e7e7e;
+        font-size: 0.12rem;
+        padding: 0 0.1rem;
+        cursor:pointer;
+        &:last-child{
+          border-right: 0px;
         }
       }
     }
-    .last-row{
-      margin:0 auto;
-      height: 37px;
-      color: #9c9c9c;
-      font-size: 12px;
-      text-align: center;
-      line-height: 37px;
+  }
+  .advertise-pic{
+    position:relative;
+    background-color: #262221;
+    height: 0.94rem;
+    line-height: 0.94rem;
+    .img-advertise{
+      vertical-align: middle;
     }
+  }
+  .last-row{
+    margin:0 auto;
+    height: 0.4rem;
+    color: #7e7e7e;
+    font-size: 0.12rem;
+    text-align: center;
+    line-height: 0.4rem;
   }
 }
  

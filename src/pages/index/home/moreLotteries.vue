@@ -2,7 +2,7 @@
   <section class="more-lotteries">
     <div class="row content">
       <div class="left" @click="shiftLeft">
-        <
+       <
       </div>
       <div class="right" @click="shiftRight">
         >
@@ -77,7 +77,6 @@ import img from "../../../assets/img/lottery (3).png"
   width:100%;
   padding: 8px 0;
   background:#231f20;
-  border-bottom:1px solid #393536;
   .content{
     padding: 5px 0;
     height: 1.5rem;

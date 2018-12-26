@@ -20,4 +20,19 @@ $input_border_color:#d4d7e0;
 $btn_hover_bg_color:#05bdfd;
 $btn_hover_text_color:#fff;
 $btn_hover_color:#fff;
+%btn-yellow {
+  color: #000;
+  background-image: linear-gradient(to bottom,#e8eaaf, #b5800c); 
+  min-width: 0.9rem; 
+  box-sizing: border-box;
+  cursor: pointer;
+  padding:0 0.1rem;
+  height: 0.26rem;
+  margin: 0 0.04rem;
+  font-size: 0.14rem;
+  vertical-align: top;
+  border: none;
+  border-radius: 0.03rem;
+  transition: all .3s;
+}
 

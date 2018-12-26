@@ -28,17 +28,37 @@
       </div>
     </section>
     <more-lotteries></more-lotteries>
+    <section class="slot-casino">
+      <div class="slot-casino-row row">
+        <hot-slot></hot-slot>
+        <hot-casino></hot-casino>
+      </div>
+    </section>
+    <section class="advantage-title">
+      <div class="hot-lottery-row row">
+        <span class="lottery-title">
+          服务优势
+        </span>
+      </div>
+    </section>
+    <advantage-content></advantage-content>
   </section>
 </template>
 <script>
 
 // import countdown from "./home/countdown";
+import hotCasino from "./home/hotCasino"
+import hotSlot from "./home/hotSlot"
 import moreGames from "./home/moreGames"
 import moreLotteries from "./home/moreLotteries"
+import advantageContent from "./home/advantageContent"
 export default {
   components: {
     moreGames,
-    moreLotteries
+    moreLotteries,
+    hotSlot,
+    hotCasino,
+    advantageContent
   },
   name: "home",
   data() {
@@ -71,7 +91,7 @@ export default {
     height: 5.04rem;
     background: url(../../assets/img/banner1920_504.png) no-repeat left center;
   }
-  .hot-lottery-more{
+  .advantage-title,.hot-lottery-more{
     width: 100%;
     height: 0.56rem;
     background-color: #231f20;
@@ -80,8 +100,10 @@ export default {
       display:flex;
       align-items: center;
       justify-content:space-between;
+      border-bottom:1px solid #393536;
     }
     .lottery-title{
+      font-size: 0.22rem;
       color:#ddd595;
     }
     .more-g-btn{
@@ -93,7 +115,7 @@ export default {
       padding:0 0.1rem;
       height: 0.26rem;
       margin: 0 0.04rem;
-      font-size: 0.13rem;
+      font-size: 0.14rem;
       vertical-align: top;
       border: none;
       border-radius: 0.03rem;
@@ -116,12 +138,12 @@ export default {
         color: #fff;
         font-size: 12px;
         font-weight: bold;
-        background: url(https://cdn.igsttech.com/Web.Portal/DQ004-01.Portal/Content/Views/Shared/images/news.png) no-repeat left center;
+        background: url(../../assets/img/trumpet-icon.png) no-repeat left center;
       }
       .marquee{
         position:relative;
         display:flex;
-        width: 690px;
+        width: 10.5rem;
         overflow-x: hidden;
         white-space: nowrap;
         color:#fff;
@@ -133,6 +155,16 @@ export default {
         }
       }
     }
+  }
+  .slot-casino{
+    width: 100%;
+    height: 2.66rem;
+    background-color: #1f1b1a;
+  }
+  .slot-casino-row{
+    height: 100%;
+    display: flex;
+    justify-content:space-between; 
   }
 }
 </style>
